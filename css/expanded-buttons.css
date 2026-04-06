@@ -1,0 +1,82 @@
+.button-animated {
+  background: linear-gradient(120deg, #000000, #434343, #000000);
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-animated-red {
+  background: linear-gradient(120deg, #6b1b1b, #e11515, #9c3131);
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-animated-red:hover {
+  animation: gradientMove 2s ease infinite;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.button-animated-red:active { transform: scale(1.1);}
+
+.button-animated-blue {
+  background: linear-gradient(120deg, #0d3b82, #3474d9, #1f5cb5);
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-animated-blue:hover,
+.button-animated-green:hover,
+.button-animated-yellow:hover,
+.button-animated-multicolor:hover,
+.button-animated-red:hover,
+.button-animated:hover {
+  animation: gradientMove 2s ease infinite;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.button-animated-blue:active,
+.button-animated-green:active,
+.button-animated-yellow:active,
+.button-animated-multicolor:active,
+.button-animated-red:active,
+.button-animated:active {
+  transform: scale(1.1);
+}
+
+.button-animated-green {
+  background: linear-gradient(120deg, #1c6b24, #5ebc4b, #3d8a32);
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-animated-yellow {
+  background: linear-gradient(120deg, #d4a71e, #f7de5f, #e2c23a);
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-animated-multicolor {
+  background: linear-gradient(120deg, #ff5f6d, #ffc371, #3a86ff, #8338ec, #ff006e);
+  background-size: 300% 300%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
